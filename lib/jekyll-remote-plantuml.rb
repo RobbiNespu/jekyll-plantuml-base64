@@ -54,5 +54,5 @@ module Jekyll
     
 end
 
-Liquid::Template.register_tag('uml', Jekyll::PlantUmlBlock);
+Liquid::Template.register_tag('plantuml', Jekyll::PlantUmlBlock);
 
