@@ -43,11 +43,12 @@ module Jekyll
         # Render
         def render(context)
             output = super(context);
-            code, pconf, baseurl = PlantUmlEncode64.new(output).encode(), PlantUmlConfig::DEFAULT, Jekyll.configuration({})['site.baseurl'];
+            code, pconf, baseurl = PlantUmlEncode64.new(output).encode(), PlantUmlConfig::DEFAULT, Jekyll.configuration({})['baseurl'];
+            host,port = Jekyll.configuration({})['host'], Jekyll.configuration({})['port']
             p = {:url => pconf[:url], :type => pconf[:type], :code => code }
             Jekyll.logger.debug "Generate html with input params  :", p;
             d = RemoteLoader.instance.savedRemoteBinary(p);
-            return "<img src=\"%{baseurl}%{uri}\" />" % d.merge({ :baseurl => baseurl });
+            return "<img src=\"http://#{host}:#{port}/%{baseurl}%{uri}\" />" % d.merge({ :baseurl => baseurl });
         end
 
     end
