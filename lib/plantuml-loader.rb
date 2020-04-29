@@ -104,6 +104,27 @@ class RemoteLoader
         return data;
     end
 
+
+    def savedRemoteBinaryBase64(params)
+        Jekyll.logger.debug "Plantuml remote loader params :", params;
+        data = getData(params);
+        unless File.exist?(data[:path]) then
+            Jekyll.logger.info "Starting download content at %{remoteUri} done into file %{path}." % data;
+            open(data[:path], 'wb') do |file|
+                file << open(data[:remoteUri]).read
+                Jekyll.logger.info "End download content at %{remoteUri} done into file %{path}." % data;
+            end
+        else
+            Jekyll.logger.info "File %{path} has been found. Not download at %{remoteUri} will be made." % data;
+        end
+        Jekyll.logger.info "turn data into base64 format" % data;
+        echo = "cat %{path}" %data;
+        base64 = `#{echo}  | base64`
+        Jekyll.logger.info  "ZZZZZ we got > #{base64}"
+        #return base64
+        return "<img src=\"data:image/png;base64, #{base64}\">"
+    end
+
     # Public : get and saved the remote uri from a parameters hash
     # if the same content has already been downloaded previously,
     # just return the file content.

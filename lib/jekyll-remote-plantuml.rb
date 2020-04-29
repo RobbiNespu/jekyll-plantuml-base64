@@ -47,8 +47,11 @@ module Jekyll
             host,port = Jekyll.configuration({})['host'], Jekyll.configuration({})['port']
             p = {:url => pconf[:url], :type => pconf[:type], :code => code }
             Jekyll.logger.debug "Generate html with input params  :", p;
-            d = RemoteLoader.instance.savedRemoteBinary(p);
-            return "<img src=\"http://#{host}:#{port}/%{baseurl}%{uri}\" />" % d.merge({ :baseurl => baseurl });
+            #d = RemoteLoader.instance.savedRemoteBinary(p);
+            d = RemoteLoader.instance.savedRemoteBinaryBase64(p);
+            puts d
+            return "#{d}"
+            #return "<img src=\"http://#{host}:#{port}/%{baseurl}%{uri}\" />" % d.merge({ :baseurl => baseurl });
         end
 
     end
