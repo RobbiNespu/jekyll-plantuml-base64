@@ -1,7 +1,7 @@
 # jekyll-remote-plantuml
 
-[![Build Status](https://travis-ci.org/robbinespu/jekyll-plantuml-embed.svg?branch=master)](https://travis-ci.org/robbinespu/jekyll-plantuml-embed)
-[![Gem Version](https://badge.fury.io/rb/jekyll-plantuml-embed.svg)](https://badge.fury.io/rb/jekyll-plantuml-embed)
+[![Build Status](https://travis-ci.org/RobbiNespu/jekyll-remote-plantuml.svg?branch=master)](https://travis-ci.org/RobbiNespu/jekyll-remote-plantuml)
+[![Gem Version](https://badge.fury.io/rb/jekyll-remote-plantuml.svg)](https://badge.fury.io/rb/jekyll-remote-plantuml)
 [![Maintainability](https://api.codeclimate.com/v1/badges/aafba8fb4df9ac92e485/maintainability)](https://codeclimate.com/github/RobbiNespu/jekyll-plantuml-embed/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/cd56b207f327603662a1/test_coverage)](https://codeclimate.com/github/robbinespu/jekyll-plantuml/test_coverage)
 [![security](https://hakiri.io/github/Patouche/jekyll-remote-plantuml/master.svg)](https://hakiri.io/github/Patouche/jekyll-remote-plantuml/master) 
