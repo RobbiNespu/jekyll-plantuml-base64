@@ -7,6 +7,7 @@
 [![security](https://hakiri.io/github/Patouche/jekyll-remote-plantuml/master.svg)](https://hakiri.io/github/Patouche/jekyll-remote-plantuml/master) [![Build Status](https://travis-ci.org/Patouche/jekyll-remote-plantuml.svg)](https://travis-ci.org/Patouche/jekyll-remote-plantuml)
 
 A Jekyll plugin to simplify the creation of diagrams and flowcharts in your posts and pages with PlantUML as base64 image.
+forked from: [https://github.com/Patouche/jekyll-remote-plantuml](https://github.com/Patouche/jekyll-remote-plantuml)
 
 A plugin for jekyll to use plantuml diagram inside your [Jekyll](http://jekyllrb.com/) for you website. This will use external resource to build plantuml diagram. Once created, the diagram is store on the filesystem to prevent any unnecessary diagram generation. So, using this plugin, provide a simple way to integrate plantuml diagramm without the [Graphiz](http://www.graphviz.org/) software or the using the [plantuml](http://sourceforge.net/projects/plantuml/files/plantuml.jar/download) jar file and convert that file into base64.
 
