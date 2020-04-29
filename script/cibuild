@@ -3,4 +3,4 @@
 set -ex
 
 bundle exec rspec
-bundle exec gem build jekyll-plantuml-embed.gemspec
+bundle exec gem build jekyll-remote-plantuml.gemspec
