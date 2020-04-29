@@ -4,7 +4,7 @@ require 'rake/testtask'
 
 desc "Run tests"
 task :test do
-    require 'jekyll-remote-plantuml'
+    require 'jekyll-plantuml-base64'
     $:.unshift './test'
     Dir.glob('test/test*.rb').each { |t| require File.basename(t) }
 end

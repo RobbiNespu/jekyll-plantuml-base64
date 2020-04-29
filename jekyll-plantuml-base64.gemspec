@@ -2,12 +2,12 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |s|
-    s.name        = 'jekyll-remote-plantuml'
+    s.name        = 'jekyll-plantuml-base64'
     s.version     = '0.1.4.34'
     s.date        = '2020-04-28'
-    s.homepage    = "http://github.com/RobbiNespu/jekyll-remote-plantuml"
-    s.summary     = "Jekyll remote plantuml"
-    s.description = "Jekyll to use plantuml with remote provider without any local plantuml.jar installation"
+    s.homepage    = "http://github.com/RobbiNespu/jekyll-plantuml-base64"
+    s.summary     = "Jekyll plantuml base64"
+    s.description = "jekyll plugin to include plantuml diagram in jekyll website as base64 image"
     s.authors     = ["RobbiNespu"]
     s.email       = 'robbinespu@gmail.com'
 

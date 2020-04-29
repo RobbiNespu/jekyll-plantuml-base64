@@ -1,7 +1,7 @@
-# jekyll-remote-plantuml
+# jekyll-plantuml-base64
 
-[![Build Status](https://travis-ci.org/RobbiNespu/jekyll-remote-plantuml.svg?branch=master)](https://travis-ci.org/RobbiNespu/jekyll-remote-plantuml)
-[![Gem Version](https://badge.fury.io/rb/jekyll-remote-plantuml.svg)](https://badge.fury.io/rb/jekyll-remote-plantuml)
+[![Build Status](https://travis-ci.org/RobbiNespu/jekyll-plantuml-base64.svg?branch=master)](https://travis-ci.org/RobbiNespu/jekyll-remote-plantuml)
+[![Gem Version](https://badge.fury.io/rb/jekyll-plantuml-base64.svg)](https://badge.fury.io/rb/jekyll-remote-plantuml)
 [![Maintainability](https://api.codeclimate.com/v1/badges/aafba8fb4df9ac92e485/maintainability)](https://codeclimate.com/github/RobbiNespu/jekyll-plantuml-embed/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/cd56b207f327603662a1/test_coverage)](https://codeclimate.com/github/robbinespu/jekyll-plantuml/test_coverage)
 [![security](https://hakiri.io/github/Patouche/jekyll-remote-plantuml/master.svg)](https://hakiri.io/github/Patouche/jekyll-remote-plantuml/master) 
@@ -17,7 +17,7 @@ To install this plugin on Jekyll, you just have to follow the guideline of Jekyl
 
 ## Usage
 
-To use the jekyll-remote-plantuml plugin, you just have to wrap you text between `{% plantuml %}` and `{% endplantuml %}` tags.
+To use the jekyll-plantuml-base64 plugin, you just have to wrap you text between `{% plantuml %}` and `{% endplantuml %}` tags.
 
 For example, to create a basic shema between Bob and Alice, you can write the following code :
 
