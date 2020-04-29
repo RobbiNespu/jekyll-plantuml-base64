@@ -4,7 +4,7 @@
 [![Gem Version](https://badge.fury.io/rb/jekyll-plantuml-embed.svg)](https://badge.fury.io/rb/jekyll-plantuml-embed)
 [![Maintainability](https://api.codeclimate.com/v1/badges/aafba8fb4df9ac92e485/maintainability)](https://codeclimate.com/github/RobbiNespu/jekyll-plantuml-embed/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/cd56b207f327603662a1/test_coverage)](https://codeclimate.com/github/robbinespu/jekyll-plantuml/test_coverage)
-[![security](https://hakiri.io/github/Patouche/jekyll-remote-plantuml/master.svg)](https://hakiri.io/github/Patouche/jekyll-remote-plantuml/master) [![Build Status](https://travis-ci.org/Patouche/jekyll-remote-plantuml.svg)](https://travis-ci.org/Patouche/jekyll-remote-plantuml)
+[![security](https://hakiri.io/github/Patouche/jekyll-remote-plantuml/master.svg)](https://hakiri.io/github/Patouche/jekyll-remote-plantuml/master) 
 
 A Jekyll plugin to simplify the creation of diagrams and flowcharts in your posts and pages with PlantUML as base64 image.
 forked from: [https://github.com/Patouche/jekyll-remote-plantuml](https://github.com/Patouche/jekyll-remote-plantuml)
