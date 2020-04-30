@@ -9,12 +9,18 @@
 A Jekyll plugin to simplify the creation of diagrams and flowcharts in your posts and pages with PlantUML as base64 image.
 forked from: [https://github.com/Patouche/jekyll-remote-plantuml](https://github.com/Patouche/jekyll-remote-plantuml)
 
-A plugin for jekyll to use plantuml diagram inside your [Jekyll](http://jekyllrb.com/) for you website. This will use external resource to build plantuml diagram. Once created, the diagram is store on the filesystem to prevent any unnecessary diagram generation. So, using this plugin, provide a simple way to integrate plantuml diagramm without the [Graphiz](http://www.graphviz.org/) software or the using the [plantuml](http://sourceforge.net/projects/plantuml/files/plantuml.jar/download) jar file and convert that file into base64.
+A plugin for jekyll to use plantuml diagram inside your [Jekyll](http://jekyllrb.com/) for you website. Origin of this code will use external resource to build plantuml diagram. Once created, the diagram is store on the filesystem to prevent any unnecessary diagram generation. So, using this plugin, provide a simple way to integrate plantuml diagramm without the [Graphiz](http://www.graphviz.org/) software or the using the [plantuml](http://sourceforge.net/projects/plantuml/files/plantuml.jar/download) jar file but I modified by convert that file into base64 and displayed on your website.
 
 ## Installation
 
+Option 1: 
 To install this plugin on Jekyll, you just have to follow the guideline of Jekyll [documentation](http://jekyllrb.com/docs/plugins/)
 
+Option 2:
+Use rubygems, by adding `gem 'jekyll-plantuml-base64', '~> 0.1.4.34'` on your gemfile then `bundle install`
+
+Option 3:
+Pull the gems directly from git by adding `gem 'jekyll-remote-plantuml', '0.1.4.34', git: 'https://github.com/RobbiNespu/jekyll-remote-plantuml'` on your gemfile and then `bundle install`
 ## Usage
 
 To use the jekyll-plantuml-base64 plugin, you just have to wrap you text between `{% plantuml %}` and `{% endplantuml %}` tags.
@@ -31,13 +37,14 @@ This will retrieve the binary from a remote provider and add it into the folder 
 
 ![Bob and Alice generated](./images/bob-alice.png)
 
-The generated html will have be something like :
+The origin will generated html will have be something like :
 
 ``` html
 <img src="/assets/images/plantuml/765f88ab868d9706e797ff2c90c67a549a144c52adf0bf2e247d355cf981b9aa.png" />
 ```
+Any update of the uml will regenerated the image file using the remote. If the uml is not modified, no request will be made on the remote provider.
 
-and converted into base64
+but this code will convert them nto base64 format
 ```html
 <img src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAK0AAAA2CAIAAAA6bI6UAAAAKXRFWHRjb3B5bGVmdABHZW5lcmF0
  ZWQgYnkgaHR0cDovL3BsYW50dW1sLmNvbREwORwAAAEAaVRYdHBsYW50dW1sAAEAAAB4nDWOTW+C
@@ -82,8 +89,8 @@ and converted into base64
  zxhdIJCj5gAAAABJRU5ErkJggg==
  ">
 ```
+Mean, i do not need to really install this file because during CI/CD build process, the plugin will convert them into base64. Anyway, it will execute every time you build. If you have a lots of image and heavy / big images then pls consider using original plugins.
 
-Any update of the uml will regenerated the image file using the remote. If the uml is not modified, no request will be made on the remote provider.
 
 ## Configuration
 
