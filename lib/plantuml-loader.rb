@@ -122,7 +122,7 @@ class RemoteLoader
         base64 = `#{echo}  | base64`
         #Jekyll.logger.info  "ZZZZZ we got > #{base64}"
         #return base64
-        return "<img src=\"data:image/png;base64, #{base64}\">"
+        return "<img src=\"data:image/png;base64, #{base64}#center\">"
     end
 
     # Public : get and saved the remote uri from a parameters hash

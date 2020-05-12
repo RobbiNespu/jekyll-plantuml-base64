@@ -43,10 +43,11 @@ module Jekyll
         # Render
         def render(context)
             output = super(context);
+            #Jekyll.logger.info  "ZZZZZ we got > #{output}"
             code, pconf, baseurl = PlantUmlEncode64.new(output).encode(), PlantUmlConfig::DEFAULT, Jekyll.configuration({})['baseurl'];
             host,port = Jekyll.configuration({})['host'], Jekyll.configuration({})['port']
             p = {:url => pconf[:url], :type => pconf[:type], :code => code }
-            Jekyll.logger.debug "Generate html with input params  :", p;
+            #Jekyll.logger.info "Generate html with input params  :", p;
             #d = RemoteLoader.instance.savedRemoteBinary(p);
             d = RemoteLoader.instance.savedRemoteBinaryBase64(p);
             #puts d
