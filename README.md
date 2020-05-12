@@ -17,10 +17,10 @@ Option 1:
 To install this plugin on Jekyll, you just have to follow the guideline of Jekyll [documentation](http://jekyllrb.com/docs/plugins/)
 
 Option 2:
-Use rubygems, by adding `gem 'jekyll-plantuml-base64', '~> 0.1.4.34'` on your gemfile then `bundle install`
+Use rubygems, by adding `gem 'jekyll-plantuml-base64', '~> 0.1.4.36'` on your gemfile then `bundle install`
 
 Option 3:
-Pull the gems directly from git by adding `gem 'jekyll-remote-plantuml', '0.1.4.34', git: 'https://github.com/RobbiNespu/jekyll-remote-plantuml'` on your gemfile and then `bundle install`
+Pull the gems directly from git by adding `gem 'jekyll-remote-plantuml', '0.1.4.36', git: 'https://github.com/RobbiNespu/jekyll-remote-plantuml'` on your gemfile and then `bundle install`
 ## Usage
 
 To use the jekyll-plantuml-base64 plugin, you just have to wrap you text between `{% plantuml %}` and `{% endplantuml %}` tags.
