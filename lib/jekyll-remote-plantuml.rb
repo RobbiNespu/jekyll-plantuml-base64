@@ -49,7 +49,7 @@ module Jekyll
             Jekyll.logger.debug "Generate html with input params  :", p;
             #d = RemoteLoader.instance.savedRemoteBinary(p);
             d = RemoteLoader.instance.savedRemoteBinaryBase64(p);
-            puts d
+            #puts d
             return "#{d}"
             #return "<img src=\"http://#{host}:#{port}/%{baseurl}%{uri}\" />" % d.merge({ :baseurl => baseurl });
         end
