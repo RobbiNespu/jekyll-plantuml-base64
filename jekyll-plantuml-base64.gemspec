@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |s|
     s.name        = 'jekyll-plantuml-base64'
-    s.version     = '0.1.4.34'
+    s.version     = '0.1.4.35'
     s.date        = '2020-04-28'
     s.homepage    = "http://github.com/RobbiNespu/jekyll-plantuml-base64"
     s.summary     = "Jekyll plantuml base64"
