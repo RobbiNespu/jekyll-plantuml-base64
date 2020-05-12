@@ -120,7 +120,7 @@ class RemoteLoader
         Jekyll.logger.info "turn data into base64 format" % data;
         echo = "cat %{path}" %data;
         base64 = `#{echo}  | base64`
-        Jekyll.logger.info  "ZZZZZ we got > #{base64}"
+        #Jekyll.logger.info  "ZZZZZ we got > #{base64}"
         #return base64
         return "<img src=\"data:image/png;base64, #{base64}\">"
     end
